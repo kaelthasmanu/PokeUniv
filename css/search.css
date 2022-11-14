@@ -1,0 +1,31 @@
+form {
+    background: #ef5350;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    left: 0;
+    right: 0;
+  }
+  
+  form input {
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 12px 20px;
+  }
+  
+  form input[type="text"] {
+    background: rgba(255, 254, 254, 0.7);
+    min-width: 300px;
+    max-width: 100%;
+  }
+  
+  form input[type="submit"] {
+    cursor: pointer;
+    margin-left: 8px;
+    background: #c62828;
+    color: #f0d0d0;
+  }
+  
