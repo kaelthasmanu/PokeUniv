@@ -1,11 +1,14 @@
+/*Querys Selectors*/ 
 const pokemonContainer = document.querySelector(".pokemon-container")
 const spinner = document.querySelector("#spinner")
 const previous = document.querySelector("#previous")
 const next = document.querySelector("#next")
 
+/*Limits get pokemons*/ 
 let limit = 8
 let offset = 1
 
+/*Buttons*/
 previous.addEventListener("click", () => {
     if (offset != 1) {
         offset -= 9
@@ -20,6 +23,7 @@ next.addEventListener("click", () => {
     fetchPokemons(offset, limit)
 })
 
+/*request to api*/
 function fetchPokemon(id) {
     fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`)
         .then((res) => res.json())
@@ -35,6 +39,7 @@ function fetchPokemons(offset, limit) {
         fetchPokemon(i)
     }
 }
+
 
 function createPokemon(pokemon) {
     const flipCard = document.createElement("div")
