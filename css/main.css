@@ -174,3 +174,11 @@ input[type=checkbox]{
     grid-template-columns: 1fr 2fr;
     text-align: left;
 }
+
+#next{
+    text-align: right;
+}
+
+#previous{
+    text-align: left;
+}
