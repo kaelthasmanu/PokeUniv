@@ -175,7 +175,7 @@ input[type=checkbox]{
 #previous{
     text-align: left;
 }
-
+/*Buttons Previous/Next */
 .container-buttons {
     display: flex;
     padding: 65px;
