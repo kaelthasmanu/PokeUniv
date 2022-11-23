@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/index.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/search.css">
     <title>PokeDex</title>
@@ -25,15 +24,29 @@
           </nav>
     </header>
     <main>
-      <form>
-        <input type="text" placeholder="Search Pokemon" />
-        <input type="submit" value="Search" />
-      </form>  
+      <form action="#" onsubmit="getNamePokemon()">
+        <input id="searchpokemon" type="text" placeholder="Search Pokemon" />
+        <input type="submit" value="Search"/>
+      </form> 
+      <script>
+        function getNamePokemon(){
+          console.log(document.getElementById('searchpokemon').value)
+        }
+      </script>
+      <div class="container">
+        <div>
+          <p>Hello World</p>
+        </div>
+        <div>
+          <p>Hello World</p>
+        </div>
+      </div> 
     </main>
-    <div class="pokemon-container"></div>
     <footer>
         <p>Author: Manuel Alberto Gorrin Reyes</p>
         <p><a href="mailto:manuelalberto.gorrin@gmail.com">manuelalberto.gorrin@gmail.com</a></p>
     </footer>
+    <!--Scripts-->
+    <script src="js/search.js"></script>
 </body>
 </html>

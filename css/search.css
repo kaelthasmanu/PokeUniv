@@ -29,3 +29,10 @@ form {
     color: #f0d0d0;
   }
   
+.container {
+  display: flex;
+  padding: 65px;
+}
+.container div {
+  flex: 1;
+}
