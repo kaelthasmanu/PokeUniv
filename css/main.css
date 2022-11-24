@@ -168,13 +168,22 @@ input[type=checkbox]{
     text-align: left;
 }
 
+.large-container{
+    margin: 10px;
+    width: 15%;
+}
+
 #next{
+    width: 15%;
     text-align: right;
 }
 
 #previous{
+    width: 15%;
     text-align: left;
+    
 }
+
 /*Buttons Previous/Next */
 .container-buttons {
     display: flex;
