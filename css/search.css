@@ -1,6 +1,6 @@
 form {
     background: #ef5350;
-    position: fixed;
+    position: absolute;
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -35,4 +35,11 @@ form {
 }
 .container div {
   flex: 1;
+}
+
+.card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;  
 }

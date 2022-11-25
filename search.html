@@ -24,21 +24,23 @@
           </nav>
     </header>
     <main>
-      <form action="#" onsubmit="getNamePokemon()">
+      <form action="#" onsubmit="getNamePokemon()" class = "searchbar">
         <input id="searchpokemon" type="text" placeholder="Search Pokemon" />
         <input type="submit" value="Search"/>
       </form> 
       <script>
         function getNamePokemon(){
           console.log(document.getElementById('searchpokemon').value)
+          const namePokemon = document.getElementById('searchpokemon').value
+          fetchPokemon(namePokemon)
         }
       </script>
       <div class="container">
-        <div>
-          <p>Hello World</p>
+        <div class = "container1">
+
         </div>
-        <div>
-          <p>Hello World</p>
+        <div class = "container2">
+
         </div>
       </div> 
     </main>
