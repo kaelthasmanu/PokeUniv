@@ -30,6 +30,7 @@
       </form> 
       <script>
         function getNamePokemon(){
+          removeChildNodes(container1)
           console.log(document.getElementById('searchpokemon').value)
           const namePokemon = document.getElementById('searchpokemon').value
           fetchPokemon(namePokemon)

@@ -48,3 +48,10 @@ function createPokemon(pokemon) {
     cardContainer.appendChild(cardBack)
     container1.appendChild(flipCard)
 }
+
+
+function removeChildNodes(parent) {
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild)
+    }
+}
