@@ -2,8 +2,8 @@ const container1 = document.querySelector(".container1")
 const container2 = document.querySelector(".container2")
 
 
-function fetchPokemon(id) {
-    fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`)
+function fetchPokemon(name) {
+    fetch(`https://pokeapi.co/api/v2/pokemon/${name}/`)
         .then((res) => res.json())
         .then((data) => {
             createPokemon(data)
@@ -43,10 +43,30 @@ function createPokemon(pokemon) {
 
     const cardBack = document.createElement("div")
     cardBack.classList.add("pokemon-block-back")
+    console.log(pokemon.stats)
 
     cardContainer.appendChild(card)
     cardContainer.appendChild(cardBack)
     container1.appendChild(flipCard)
+}
+
+function stats(stats) {
+    const statsContainer = document.createElement("div")
+    statsContainer.classList.add("stats-container")
+
+    for (let i = 0; i < 3; i++) {
+        const stat = stats[i]
+
+        const statContainer = document.createElement("stat-container")
+        statContainer.classList.add("stat-container")
+    
+        const statName = document.createElement("p")
+        statName.textContent = stat.stat.name
+
+        statContainer.appendChild(statName)
+        statsContainer.appendChild(statContainer)
+    }
+    
 }
 
 
