@@ -3,12 +3,25 @@ const pokemonContainer = document.querySelector(".pokemon-container")
 const spinner = document.querySelector("#spinner")
 const previous = document.querySelector("#previous")
 const next = document.querySelector("#next")
+const buttonNav = document.querySelector("#checkbox_toggle")
 
 /*Limits get pokemons*/ 
 let limit = 8
 let offset = 1
 
-/*Buttons*/
+/*Events*/
+buttonNav.addEventListener("click" ,() =>{
+    const cb = document.querySelector('#checkbox_toggle');
+    if(cb.checked){
+        const downCards = document.querySelector(".pokemon-container")
+        downCards.style.marginTop = "150px"
+    }
+    else{
+        const downCards = document.querySelector(".pokemon-container")
+        downCards.style.marginTop = "20px"
+    }
+})
+
 previous.addEventListener("click", () => {
     if (offset != 1) {
         offset -= 9
