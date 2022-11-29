@@ -8,6 +8,9 @@ function fetchPokemon(name) {
         .then((data) => {
             createPokemon(data)
         })
+        .catch((error) => {
+            alert("The pokemon was not found, please write the name correctly")
+        })
 }
 
 function createPokemon(pokemon) {
@@ -54,7 +57,6 @@ function createPokemon(pokemon) {
 
 
 function stats(stats) {
-    removeChildNodes(container2)
     const statsContainer = document.createElement("div")
     statsContainer.classList.add("stats-container")
 
