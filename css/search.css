@@ -32,9 +32,17 @@ form {
 .container {
   display: flex;
   padding: 65px;
+  flex-wrap: wrap;
 }
 .container div {
   flex: 1;
+  justify-content: space-between;
+}
+
+.container2{
+  display: flex;
+  align-items: center;
+  margin: auto;
 }
 
 .card{

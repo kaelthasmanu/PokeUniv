@@ -43,29 +43,47 @@ function createPokemon(pokemon) {
 
     const cardBack = document.createElement("div")
     cardBack.classList.add("pokemon-block-back")
-    console.log(pokemon.stats)
+    stats(pokemon.stats)
 
     cardContainer.appendChild(card)
     cardContainer.appendChild(cardBack)
     container1.appendChild(flipCard)
+    container2.appendChild(stats(pokemon.stats))
 }
 
+
+
 function stats(stats) {
+    removeChildNodes(container2)
     const statsContainer = document.createElement("div")
     statsContainer.classList.add("stats-container")
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 6; i++) {
         const stat = stats[i]
-
+        
         const statContainer = document.createElement("stat-container")
         statContainer.classList.add("stat-container")
-    
+
         const statName = document.createElement("p")
         statName.textContent = stat.stat.name
 
+        const progress = document.createElement("div")
+        progress.classList.add("progress")
+
+        const progressBar = document.createElement("div")
+        progressBar.classList.add("progress-bar")
+
+        progressBar.textContent = stat.base_stat
+
+        progress.appendChild(progressBar)
         statContainer.appendChild(statName)
+        statContainer.appendChild(progress)
+
         statsContainer.appendChild(statContainer)
+
     }
+
+    return statsContainer
     
 }
 
