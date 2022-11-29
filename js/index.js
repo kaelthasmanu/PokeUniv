@@ -6,7 +6,7 @@ const next = document.querySelector("#next")
 const buttonNav = document.querySelector("#checkbox_toggle")
 
 /*Limits get pokemons*/ 
-let limit = 8
+let limit = 12
 let offset = 1
 
 /*Events*/
