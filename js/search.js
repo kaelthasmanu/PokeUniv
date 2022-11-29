@@ -23,10 +23,8 @@ function createPokemon(pokemon) {
     flipCard.appendChild(cardContainer)
 
     const card = document.createElement("div")
-    //card.classList.add("pokemon-block")
 
     const spriteContainer = document.createElement("div")
-    //spriteContainer.classList.add("img-container")
 
     const sprite = document.createElement("img")
     sprite.src = pokemon.sprites.other.dream_world.front_default
@@ -37,7 +35,6 @@ function createPokemon(pokemon) {
     number.textContent = `#${pokemon.id.toString().padStart(3, 0)}`
 
     const name = document.createElement("p")
-    //name.classList.add("name")
     name.textContent = pokemon.name
 
     card.appendChild(spriteContainer)
