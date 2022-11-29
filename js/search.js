@@ -9,7 +9,7 @@ function fetchPokemon(name) {
             createPokemon(data)
         })
         .catch((error) => {
-            alert("The pokemon was not found, please write the name correctly")
+            alert("The pokemon was not found, please write the name correctly or u not have connection to internet")
         })
 }
 
