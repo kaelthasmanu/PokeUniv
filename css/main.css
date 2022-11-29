@@ -93,6 +93,9 @@ input[type=checkbox]{
     .hamburger {
         display: block;
     }
+    .container-buttons{
+        flex-direction: column;
+    }
 }
 .pokemon-container {
     display: grid;
@@ -173,25 +176,12 @@ input[type=checkbox]{
     width: 15%;
 }
 
-#next{
-    width: 15%;
-    text-align: right;
-}
-
-#previous{
-    width: 15%;
-    text-align: left;
-    
-}
-
 /*Buttons Previous/Next */
 .container-buttons {
     display: flex;
-    padding: 10px 30px 70px 30px ;
-    margin: 50px;
-  }
-  .container-buttons div {
+    margin: 100px;
     flex: 1;
+    justify-content: space-between;
   }
 
 .container-buttons a {
@@ -200,8 +190,6 @@ input[type=checkbox]{
     border-radius: 10px;
     color: white;
     padding: 20px 20px;
-    text-align: center;
-    display: inline-block;
     font-size: 16px;
 }
 
