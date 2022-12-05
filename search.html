@@ -24,10 +24,12 @@
           </nav>
     </header>
     <main>
-      <form action="#" onsubmit="getNamePokemon()" class = "searchbar">
-        <input id="searchpokemon" type="text" placeholder="Search Pokemon" />
-        <input type="submit" value="Search"/>
-      </form> 
+      <div class="searchbar">
+        <form action="#" onsubmit="getNamePokemon()">
+          <input id="searchpokemon" type="text" placeholder="Search Pokemon" />
+          <input type="submit" value="Search"/>
+        </form> 
+      </div>
       <script>
         function getNamePokemon(){
           removeChildNodes(container1)
@@ -37,10 +39,10 @@
         }
       </script>
       <div class="container">
-        <div class = "container1">
+        <div class = "container1" style="margin-top: 20px;">
 
         </div>
-        <div class = "container2">
+        <div class = "container2" style="margin-top: 20px;">
 
         </div>
       </div> 

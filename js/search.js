@@ -1,5 +1,6 @@
 const container1 = document.querySelector(".container1")
 const container2 = document.querySelector(".container2")
+const buttonNav = document.querySelector("#checkbox_toggle")
 
 
 function fetchPokemon(name) {
@@ -12,6 +13,42 @@ function fetchPokemon(name) {
             alert("The pokemon was not found, please write the name correctly or u not have connection to internet")
         })
 }
+
+buttonNav.addEventListener("click" ,() =>{
+    const cb = document.querySelector('#checkbox_toggle');
+    if(cb.checked){
+        const search = document.querySelector(".searchbar")
+        search.style.marginTop = "135px"
+    }
+    else{
+        const search = document.querySelector(".searchbar")
+        search.style.marginTop = "0px"
+    }
+})
+
+buttonNav.addEventListener("click" ,() =>{
+    const cb = document.querySelector('#checkbox_toggle');
+    if(cb.checked){
+        const search = document.querySelector(".container2")
+        search.style.marginTop = "60px"
+    }
+    else{
+        const search = document.querySelector(".container2")
+        search.style.marginTop = "0px"
+    }
+})
+
+buttonNav.addEventListener("click" ,() =>{
+    const cb = document.querySelector('#checkbox_toggle');
+    if(cb.checked){
+        const search = document.querySelector(".container1")
+        search.style.marginTop = "60px"
+    }
+    else{
+        const search = document.querySelector(".container1")
+        search.style.marginTop = "0px"
+    }
+})
 
 function createPokemon(pokemon) {
     const flipCard = document.createElement("div")
