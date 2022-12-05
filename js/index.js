@@ -44,6 +44,9 @@ function fetchPokemon(id) {
             createPokemon(data)
             spinner.style.display = "none"
         })
+        .catch((error) => {
+            alert("Please check your connection to internet")
+        })
 }
 
 function fetchPokemons(offset, limit) {
