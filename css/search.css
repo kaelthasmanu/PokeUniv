@@ -51,3 +51,7 @@ form {
   height: 100%;
   text-align: center;  
 }
+.searchcss{
+  display: flex;
+  flex-wrap: wrap;
+}
