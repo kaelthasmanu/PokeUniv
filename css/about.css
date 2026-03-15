@@ -1,3 +1,35 @@
-h2{ 
-    text-align: center;
+.about {
+  max-width: 720px;
+  margin: 4rem auto;
+  padding: 3rem 2.5rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  text-align: center;
 }
+
+.about h2 {
+  font-size: 1.9rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #e63946, #f4d03f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about p {
+  color: #9090b0;
+  line-height: 1.85;
+  font-size: 0.97rem;
+  margin-bottom: 0.85rem;
+}
+
+.about a {
+  color: #e87878;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+h2 { text-align: center; }
